@@ -3,6 +3,6 @@
 ## Used Technology
 
     -Next Js
-    -Framer Motion
-    -Swiper Js
-    - Tailwind Css
+        -Framer Motion
+            -Swiper Js
+                - Tailwind Css
