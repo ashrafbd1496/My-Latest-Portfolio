@@ -35,6 +35,47 @@ const Project = () => {
 const ProjectSlider = () => {
   const projects: ProjectProps[] = [
     {
+      title: "Simple Shop",
+      description: "Simple shop woocommerce theme.",
+      image: "/project-images/simpleshop.png",
+      technologies: ["Woocommerce", "kirki", "Customizer", "WordPress"],
+      githubLink: "https://github.com/ashrafbd1496/Quiz-App",
+      liveLink: "#",
+    },
+    {
+      title: "React Quiz App",
+      description: "Crazy animal slider using html, css and js.",
+      image: "/project-images/quizapp.png",
+      technologies: ["Html5", "Css3", "Js", "Vercel"],
+      githubLink: "https://github.com/ashrafbd1496/Quiz-App",
+      liveLink: "#",
+    },
+    {
+      title: "Wp Meal Theme  Slider",
+      description: "Food Receipe , selling website.",
+      image: "/project-images/meal.jpg",
+      technologies: ["Codestar", "Metabox", "isotop", "owlcarousel"],
+      githubLink: "https://github.com/ashrafbd1496/Meal-WP",
+      liveLink: "#",
+    },
+    {
+      title: "Crazy  Slider",
+      description: "Crazy animal slider using html, css and js.",
+      image: "/project-images/crazyslider.png",
+      technologies: ["Html5", "Css3", "Js", "Vercel"],
+      githubLink: "https://github.com/ashrafbd1496/js-projects",
+      liveLink: "https://crazy-slider-pi.vercel.app/",
+    },
+    {
+      title: "Philosophy Theme",
+      description:
+        "Philosophy template converted into WordPress philosophy theme.",
+      image: "/project-images/philosophy.png",
+      technologies: ["Codestar", "Metabox", "Tgm", "WordPress"],
+      githubLink: "https://github.com/ashrafbd1496/philosophy-theme",
+      liveLink: "https://github.com/ashrafbd1496/philosophy-theme",
+    },
+    {
       title: "Wolfs Academy",
       description:
         "Kid's learning website for Wolfs Academy, have developed functionality point to currency for purchasing courses.",
@@ -60,20 +101,68 @@ const ProjectSlider = () => {
       liveLink: "https://project-three.com",
     },
     {
-      title: "Project Four",
+      title: "Prem Hospitality",
       description: "AI-powered content management system",
       image: "/project-images/prm.png",
       technologies: ["Python", "Django", "TensorFlow", "AWS"],
-      githubLink: "https://github.com/username/project-four",
-      liveLink: "https://project-four.com",
+      githubLink: "#",
+      liveLink: "https://www.prem-hospitality.com/en",
+    },
+    {
+      title: "Stemclouds",
+      description: "Kids learnig LMS website.",
+      image: "/project-images/stemcloud.jpg",
+      technologies: ["Python", "Django", "TensorFlow", "AWS"],
+      githubLink: "#",
+      liveLink: "https://stemclouds.com/",
+    },
+    {
+      title: "Ezfil",
+      description: "EzFill is a mobile fuel delivery service website.",
+      image: "/project-images/ezfil.png",
+      technologies: ["Astra", "Elementor", "slider Revolution", "Pojo"],
+      githubLink: "#",
+      liveLink: "https://ezfl.com/",
+    },
+    {
+      title: "Kingindisguise",
+      description: "Ecommerce website.",
+      image: "/project-images/king.png",
+      technologies: ["Woocommerce", "Stripe", "Nivo Slider", "Storefront"],
+      githubLink: "#",
+      liveLink: "https://kingindisguise.com/",
+    },
+    {
+      title: "Rescue-supply",
+      description: "Optimized Rescue Supply LIVE Shopify website.",
+      image: "/project-images/rescue.png",
+      technologies: ["Shopify", "Rescue Supply", "Swiper", "Ajax"],
+      githubLink: "#",
+      liveLink: "https://rescue-supply.com/",
+    },
+    {
+      title: "Noanstudio",
+      description: "Noanstudio Shopify website.",
+      image: "/project-images/nano.png",
+      technologies: ["Shopify", "Live Search", "Pacific Theme", "Ajax"],
+      githubLink: "#",
+      liveLink: "https://noanstudio.com/",
+    },
+    {
+      title: "Krishokdotcom",
+      description: "Noanstudio Shopify website.",
+      image: "/project-images/krishok.png",
+      technologies: ["Elementro", "Woocommerce", "Astra Theme", "Bksh"],
+      githubLink: "#",
+      liveLink: "https://krishokdotcom.net/",
     },
   ];
 
   return (
     <section className="min-h-screen bg-gradient-to-b from-white to-gray-50 py-20">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          Featured Projects
+        <h1 className="text-4xl text-center mb-16 bg-gradient-to-r from-black-600 to-gray-600 bg-clip-text text-black">
+          Featured <span className="font-extrabold">Projects</span>
         </h1>
 
         <div className="max-w-3xl mx-auto">

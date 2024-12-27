@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { BsDownload, BsArrowRight } from "react-icons/bs";
+import { FaReact } from "react-icons/fa";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Reveal } from "./_animation/Reveal";
 import Link from "next/link";
@@ -16,7 +17,13 @@ function HeroSection() {
           </Reveal>
           <Reveal delayTime={0.35}>
             <p className="text-[2vw] max-sm:text-[4.5vw] z-30  m-0 prof">
-              WordPress <span className="font-bold">Developer</span>
+              WordPress{" "}
+              <span className="font-bold">
+                Developer <br />
+                <span className="flex justify-center items-center">
+                  <FaReact className="text-2xl mr-2 text-customBlue" /> Lover
+                </span>
+              </span>
             </p>
           </Reveal>
           <div className="grid grid-cols-4 gap-6 max-sm:gap-2 max-sm:px-4 justify-between pt-5 max-xl:pt-5 max-lg:grid max-lg:grid-cols-4">
