@@ -39,7 +39,7 @@ const ProjectSlider = () => {
       description: "Simple shop woocommerce theme.",
       image: "/project-images/simpleshop.png",
       technologies: ["Woocommerce", "kirki", "Customizer", "WordPress"],
-      githubLink: "https://github.com/ashrafbd1496/Quiz-App",
+      githubLink: "https://github.com/ashrafbd1496/simpleshop",
       liveLink: "#",
     },
     {
@@ -77,8 +77,7 @@ const ProjectSlider = () => {
     },
     {
       title: "Wolfs Academy",
-      description:
-        "Kid's learning website for Wolfs Academy, have developed functionality point to currency for purchasing courses.",
+      description: "Kid's learning LMS website.",
       image: "/project-images/wolfs.png",
       technologies: ["LMS", "LearnPress", "Mycred", "Woocommerce"],
       githubLink: "#",
@@ -88,33 +87,25 @@ const ProjectSlider = () => {
       title: "Borbila",
       description: "E-commerce platform with real-time inventory management",
       image: "/project-images/borbila.png",
-      technologies: ["TypeScript", "Node.js", "PostgreSQL", "Redis"],
+      technologies: ["Elementor", "Hello Theme", "Woocommerce", "WordPress"],
       githubLink: "#",
       liveLink: "https://borbila.com",
-    },
-    {
-      title: "Project Three",
-      description: "Mobile-first social media dashboard with analytics",
-      image: "/project-images/ctsw.png",
-      technologies: ["React Native", "Firebase", "Redux", "Charts.js"],
-      githubLink: "https://github.com/username/project-three",
-      liveLink: "https://project-three.com",
     },
     {
       title: "Prem Hospitality",
       description: "AI-powered content management system",
       image: "/project-images/prm.png",
-      technologies: ["Python", "Django", "TensorFlow", "AWS"],
+      technologies: ["Elementor", "Woocommerce", "Booking", "Stripe"],
       githubLink: "#",
       liveLink: "https://www.prem-hospitality.com/en",
     },
     {
-      title: "Stemclouds",
-      description: "Kids learnig LMS website.",
-      image: "/project-images/stemcloud.jpg",
-      technologies: ["Python", "Django", "TensorFlow", "AWS"],
-      githubLink: "#",
-      liveLink: "https://stemclouds.com/",
+      title: "Aquila theme",
+      description: "Advance wp theme developed.",
+      image: "/project-images/Aquila.png",
+      technologies: ["Php", "OOP", "React", "WordPress"],
+      githubLink: "https://github.com/ashrafbd1496/Aquila-theme-dev",
+      liveLink: "#",
     },
     {
       title: "Ezfil",
@@ -127,7 +118,7 @@ const ProjectSlider = () => {
     {
       title: "Kingindisguise",
       description: "Ecommerce website.",
-      image: "/project-images/king.png",
+      image: "/project-images/kingindisguise.png",
       technologies: ["Woocommerce", "Stripe", "Nivo Slider", "Storefront"],
       githubLink: "#",
       liveLink: "https://kingindisguise.com/",
@@ -166,68 +157,74 @@ const ProjectSlider = () => {
         </h1>
 
         <div className="max-w-3xl mx-auto">
-          <Swiper
-            effect="cube"
-            grabCursor={true}
-            cubeEffect={{
-              shadow: true,
-              slideShadows: true,
-              shadowOffset: 20,
-              shadowScale: 0.94,
-            }}
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            modules={[EffectCube, Pagination, Autoplay]}
-            className="w-full aspect-[4/3]"
-          >
-            {projects.map((project, index) => (
-              <SwiperSlide key={index}>
-                <div className="relative w-full h-full bg-white rounded-lg overflow-hidden shadow-xl">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-1/2 object-cover"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                    <p className="text-gray-600 mb-4">{project.description}</p>
+          <div className="relative">
+            <Swiper
+              effect="cube"
+              grabCursor={true}
+              cubeEffect={{
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+              }}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              modules={[EffectCube, Pagination, Autoplay]}
+              className="w-full aspect-[4/3] h-[500px] sm:h-[500px]"
+            >
+              {projects.map((project, index) => (
+                <SwiperSlide key={index}>
+                  <div className="relative w-full h-full bg-white rounded-lg overflow-hidden shadow-xl">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-1/2 object-cover"
+                    />
+                    <div className="p-6">
+                      <h3 className="text-2xl font-bold mb-2">
+                        {project.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4">
+                        {project.description}
+                      </p>
 
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.technologies.map((tech, i) => (
-                        <span
-                          key={i}
-                          className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.technologies.map((tech, i) => (
+                          <span
+                            key={i}
+                            className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+
+                      <div className="flex gap-4 pb-12 mb-16 sm:mb-4">
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
                         >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-
-                    <div className="flex gap-4">
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
-                      >
-                        <Github size={20} />
-                        Code
-                      </a>
-                      <a
-                        href={project.liveLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                      >
-                        <LinkIcon size={20} />
-                        Live Demo
-                      </a>
+                          <Github size={20} />
+                          Code
+                        </a>
+                        <a
+                          href={project.liveLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                        >
+                          <LinkIcon size={20} />
+                          Live Demo
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>
